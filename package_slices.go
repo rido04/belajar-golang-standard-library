@@ -19,6 +19,7 @@ func main(){
 	fmt.Println(slices.Min(values)) //akan mencari data terkceil dari slice int di atas
 	fmt.Println(slices.Max(values)) //akan mencari data terbesar dari slice int di atas
 	fmt.Println(slices.Contains(names, "Muhammad")) //akan mencari apakah ada data Muhammad di slice names
+	fmt.Println(slices.Contains(names, "Joko Nawa")) //akan mencari apakah ada data Joko Nawa di slice names
 	fmt.Println(slices.Index(names, "Ridho")) //akan mencari index dari data Ridho di slice names
 	fmt.Println(slices.Grow(names, 5)) //akan menambah kapasitas dari slice names menjadi 5
 	fmt.Println(slices.ContainsFunc(names, func(s string) bool {
