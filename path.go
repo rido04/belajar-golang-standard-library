@@ -25,7 +25,7 @@ func main(){
 	fmt.Println(filepath.Base("hello/world.go")) // ini adlaah ambil base (yang world.go)
 	fmt.Println(filepath.Ext("hello/world.go")) //ini adalah ambil extension (yang .go)
 	fmt.Println(filepath.Join("hello", "world", "main.go"))//ini adlaah join beberapa path (yang hello/world/main.go)
-	fmt.Println(filepath.IsAbs("hello/world.go")) //ini adalah untuk mengecek apakah path absolut atau tidak (false)
+	fmt.Println(filepath.IsAbs("hello/world.go")) //ini adalah untuk mengecek apakah path absolut atau tidak (false karena di windows biasanya dari depan dimulai dari nama drive)
 	fmt.Println(filepath.IsLocal("hello/world.go")) //ini adalah untuk mengecek apakah path lokal atau tidak (true)
 
 }
